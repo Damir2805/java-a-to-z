@@ -13,9 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     
-    <modules>
-         <module>chapter_001</module>
-    </modules>
+   
 
     <dependencies>
         <dependency>
