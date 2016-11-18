@@ -19,7 +19,7 @@ public class CalculateTest {
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(out));
 		Calculate.main(null);
-		assetThat(out.toString(), is('Hello World!\r\n'));
+		assetThat(out.toString(), is("Hello World!\r\n"));
 		
 	}
 	
