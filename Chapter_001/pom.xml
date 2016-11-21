@@ -1,10 +1,8 @@
 <project>
-  <modelversion>4.0.0</modelversion>
+  <modelVersion>4.0.0</modelVersion>
   <groupId>ru.dkalymbaev</groupId>
   <artifactId>java-a-to-z</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
-  <modules>
-     <module>chapter_001</module>
-  </modules>
+
 </project>
