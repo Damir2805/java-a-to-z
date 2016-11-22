@@ -1,27 +1,23 @@
 package dkalymbaev;
 
-import org.junit.Test;
-import java.io.ByteArrayInputStream;
+
+import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
 
 /**
-* Test
-*/
+ * Test.
+ */
 
 public class CalculateTest {
 	/**
-	* test add
-	*/
-	@Test
+	 * test add.
+	 * @return result of testing.
+	 */
 	public viod whenExecuteMainThenPrintToConsole() {
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(out));
 		Calculate.main(null);
 		assetThat(out.toString(), is("Hello World!\r\n"));
-		
 	}
-	
-	
 }
