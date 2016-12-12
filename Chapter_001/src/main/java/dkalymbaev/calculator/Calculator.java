@@ -1,5 +1,7 @@
 package dkalymbaev;
 
+import static java.lang.Math.pow;
+
 /**
 * Realise a calculator.
 * Supports additional calculation of the previous result.
@@ -40,24 +42,20 @@ public class Calculator {
 		this.result = first * second;
 	}
 	/**
+	*This method calculates the expansion of the two arguments.
+	*@param first It is first argument.
+	*@param second It is second argument.
+	*/
+	public void expand(double first, double second) {
+		this.result = Math.pow(first, second);
+	}
+	/**
 	*This method calculates the substractions of the two arguments.
 	*@param first It is first argument.
 	*@param second It is second argument.
 	*/
 	public void substract(double first, double second) {
 		this.result = first - second;
-	}
-	/**
-	*This method calculates the expand of the two arguments.
-	*@param first It is first argument.
-	*@param second It is second argument.
-	*/
-	public void expand(double first, int second) {
-		double temp = first;
-		for (int index = 0; index != second; ++index) {
-			temp = first;
-			this.result = temp;
-		}
 	}
 	/**
 	*This method returns the result.
