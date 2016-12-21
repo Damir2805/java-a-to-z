@@ -1,4 +1,4 @@
-package dkalymbaev;
+package dkalymbaev.triangle;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
