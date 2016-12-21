@@ -1,4 +1,4 @@
-package dkalymbaev;
+package dkalymbaev.triangle;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
@@ -18,7 +18,7 @@ public class Point {
 		this.x = x;
 		this.y = y;
 	}
-	public distanceTo(Point point) {
+	public float distanceTo(Point point) {
 		/**
 		* This method calculates a distance between two points.
 		*/
