@@ -1,4 +1,4 @@
-package dkalymbaev;
+package dkalymbaev.triangle;
 
 import org.junit.Test;
 import static org.hamcrest.number.IsCloseTo.closeTo;
