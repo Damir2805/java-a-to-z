@@ -1,8 +1,12 @@
 package dkalymbaev;
 
 
+import org.junit.Test;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
 
@@ -17,7 +21,7 @@ public class CalculateTest {
 	/**
 	 * test add.
 	 */
-	 class Test
+	@org.junit.Test
 	 public void whenExecuteMainThenPrintToConsole() {
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(out));

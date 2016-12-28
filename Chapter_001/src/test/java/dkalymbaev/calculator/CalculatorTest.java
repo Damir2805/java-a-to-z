@@ -1,6 +1,8 @@
-package dkalymbaev;
+package dkalymbaev.calculator;
 
 import org.junit.Test;
+
+import static java.lang.Math.*;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import static java.lang.Math.pow;
@@ -69,10 +71,9 @@ public class CalculatorTest {
 		Calculator calculator = new Calculator();
 		final double one = 6;
 		final double two = 2;
-		final double three = 36;
-		calculator.expand(Math.pow(one, two));
+		calculator.expand(one, two);
 		double result = calculator.getResult();
-		assertThat(result, is(three));
+		assertThat(result, is(36.0));
 	}
 	/**
 	* Testing a getting result.
