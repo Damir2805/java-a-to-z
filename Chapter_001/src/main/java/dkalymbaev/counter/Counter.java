@@ -5,9 +5,10 @@ package dkalymbaev.counter;
  */
 public class Counter {
     public int add(int start, int finish) {
+        int sum = 0;
         for(int index = start; index <= finish; index++) {
-            System.out.println(index);
+            sum += index;
         }
-        return finish;
+        return sum;
     }
 }
