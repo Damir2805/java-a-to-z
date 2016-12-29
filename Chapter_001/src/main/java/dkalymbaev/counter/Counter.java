@@ -9,11 +9,12 @@ public class Counter {
     private int result;
 
     public int add() {
-        for (start = 0; start < finish; start++) {
-            if (start % 2 == 0) {
-                this.result = start + finish;
-            }
+        int a = start++;
+        if ((start + a) % 2 == 0) {
+            this.result = start + a;
             return result;
+        } else if (start + a >= finish) {
+            return 0;
         }
         return finish;
     }
