@@ -14,8 +14,7 @@ public class CounterTest {
     @Test
     public void whenIncCounted() {
         Counter count = new Counter();
-        int result = count.add();
-        assertThat(result, is(0));
-
+        int result = count.add(5);
+        assertThat(result, is(5));
     }
 }
