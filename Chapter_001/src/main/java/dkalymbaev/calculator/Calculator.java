@@ -1,4 +1,4 @@
-package dkalymbaev;
+package dkalymbaev.calculator;
 
 import static java.lang.Math.pow;
 
@@ -13,7 +13,9 @@ public class Calculator {
 	*This variable stores the result of the calculation.
 	*/
 	private double result;
-	/**
+    private double second;
+
+    /**
 	*This method calculates the sum of the two arguments.
 	*@param first It is first argument.
 	*@param second It is second argument.
@@ -43,11 +45,11 @@ public class Calculator {
 	}
 	/**
 	*This method calculates the expansion of the two arguments.
-	*@param first It is first argument.
-	*@param second It is second argument.
-	*/
+	 * @param first It is first argument.
+     * @param second It is the second argument.
+	 */
 	public void expand(double first, double second) {
-		this.result = Math.pow(first, second);
+        this.result = Math.pow(first, second);
 	}
 	/**
 	*This method calculates the substractions of the two arguments.
@@ -62,6 +64,6 @@ public class Calculator {
 	*@return Return of result.
 	*/
 	public double getResult() {
-		return this.result;
+		return (double) this.result;
 	}
 }

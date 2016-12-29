@@ -18,11 +18,10 @@ public class Point {
 		this.x = x;
 		this.y = y;
 	}
-	public float distanceTo(Point point) {
+	public double distanceTo(Point point) {
 		/**
 		* This method calculates a distance between two points.
 		*/
-		float distance = Math.sqrt(Math.pow(point.y - this.y, 2) + Math.pow(point.x - this.x, 2));
-		return distance;
+		return Math.sqrt(Math.pow(point.y - this.y, 2) + Math.pow(point.x - this.x, 2));
 	}
 }
