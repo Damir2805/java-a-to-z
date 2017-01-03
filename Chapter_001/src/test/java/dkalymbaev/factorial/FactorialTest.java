@@ -15,6 +15,6 @@ public class FactorialTest {
     public void whenMultiplicatedAndCounted() {
         Factorial fact = new Factorial();
         int result = fact.mult(1, 3);
-        assertThat(result, is(27));
+        assertThat(result, is(6));
     }
 }
