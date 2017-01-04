@@ -14,7 +14,7 @@ public class FactorialTest {
     @Test
     public void whenMultiplicatedAndCounted() {
         Factorial fact = new Factorial();
-        int result = fact.mult(1, 3);
+        int result = fact.mult(3);
         assertThat(result, is(6));
     }
 }
