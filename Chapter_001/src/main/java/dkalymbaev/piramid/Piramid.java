@@ -6,7 +6,7 @@ package dkalymbaev.piramid;
 public class Piramid {
     public static void main(Object o) {
         Piramid piramid = new Piramid();
-        int h = 5;
+        int h = 3;
         piramid.paintPiramid(h);
     }
 

@@ -21,6 +21,6 @@ public class PiramidTest {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
         Piramid.main(null);
-        assertThat(out.toString(), is("    ^    \r\n   ^^^   \r\n  ^^^^^  \r\n ^^^^^^^ \r\n^^^^^^^^^\r\n"));
+        assertThat(out.toString(), is("  ^  \r\n ^^^ \r\n^^^^^\r\n"));
     }
 }
