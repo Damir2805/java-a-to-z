@@ -10,7 +10,7 @@ public class Piramid {
         piramid.paintPiramid(h);
     }
 
-    private void paintPiramid(int h) {
+    String paintPiramid(int h) {
         String s = "^";
         for(int i = 1; i <= h; i++) {
             for (int j = 1; j <= h * 2 - 1; j++) {
@@ -22,5 +22,6 @@ public class Piramid {
             }
             System.out.println();
         }
+        return s;
     }
 }

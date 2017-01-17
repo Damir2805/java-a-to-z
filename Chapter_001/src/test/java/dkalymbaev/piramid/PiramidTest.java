@@ -20,7 +20,9 @@ public class PiramidTest {
     public void whenPiramidIsBuilded() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        Piramid.main(null);
+        Piramid pir = new Piramid();
+        String s = pir.paintPiramid(3);
         assertThat(out.toString(), is("  ^  \r\n ^^^ \r\n^^^^^\r\n"));
+
     }
 }
